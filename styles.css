@@ -231,11 +231,37 @@ footer {
     color: var(--accent);
 }
 
+@media (max-width: 1200px) {
+    nav {
+        margin-left: 120px;
+        padding: 2em 1.5em 1em 1.5em;
+    }
+    .logo {
+        left: -100px;
+        top: -40px;
+    }
+    .logo img {
+        height: 48px;
+    }
+}
 @media (max-width: 900px) {
     nav {
         flex-direction: column;
         gap: 1em;
+        margin-left: 0;
         padding: 1.5em 1em 1em 1em;
+    }
+    .logo {
+        position: static;
+        margin-bottom: 1em;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        left: 0;
+        top: 0;
+    }
+    .logo img {
+        height: 40px;
     }
     .hero {
         flex-direction: column;
@@ -249,12 +275,59 @@ footer {
         flex-direction: column;
         gap: 1.5em;
     }
-    .logo {
-        left: 10px;
-        top: 10px;
+    .features {
+        padding: 2em 1em 1.5em 1em;
     }
+    .about {
+        padding: 2em 1em 1.5em 1em;
+    }
+    .footer-content {
+        padding: 1em 0.5em;
+    }
+    .hero-content {
+        max-width: 100%;
+    }
+}
+@media (max-width: 600px) {
     .logo img {
-        height: 40px;
+        height: 32px;
+    }
+    .logo {
+        margin-bottom: 0.5em;
+    }
+    nav ul {
+        gap: 1em;
+    }
+    .btn-nav {
+        padding: 0.5em 1em;
+        font-size: 0.95em;
+        margin-left: 0;
+        margin-top: 0.5em;
+    }
+    .hero h1 {
+        font-size: 1.7em;
+    }
+    .hero p, .about p, .card p {
+        font-size: 1em;
+    }
+    .features h2, .about h2 {
+        font-size: 1.2em;
+    }
+    .card {
+        width: 100%;
+        padding: 1.2em 0.7em;
+    }
+    .footer-content {
+        font-size: 0.95em;
+    }
+    .hero-form {
+        flex-direction: column;
+        gap: 0.5em;
+        align-items: stretch;
+    }
+    .hero-form input[type="email"], .hero-form button {
+        width: 100%;
+        box-sizing: border-box;
     }
 }
 
